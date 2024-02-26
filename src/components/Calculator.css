@@ -10,3 +10,19 @@ button {
 button:hover {
   cursor: pointer;
 }
+
+.wrapper {
+  background-color: black;
+  border-radius: 1em;
+  padding: 1em;
+}
+
+.orange {
+  background-color: #ff9500;
+  color: white;
+}
+
+.gray {
+  background-color: #505050;
+  color: white;
+}
