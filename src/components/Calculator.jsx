@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./Calculator.css";
 import Container from "@mui/material/Container";
 import { Box } from "@mui/system";
-import { Hidden } from "@mui/material";
 
 export default function Calculator() {
   const [num, setNum] = useState(0);
@@ -22,7 +21,7 @@ export default function Calculator() {
     setNum(0);
   }
 
-  function porcentage() {
+  function percentage() {
     setNum(num / 100);
   }
 
@@ -61,7 +60,7 @@ export default function Calculator() {
           <h1 className="result">{num}</h1>
           <button onClick={clear}>AC</button>
           <button onClick={changeSign}>+/-</button>
-          <button onClick={porcentage}>%</button>
+          <button onClick={percentage}>%</button>
           <button className="orange" onClick={operatorHandler} value="/">
             /
           </button>
